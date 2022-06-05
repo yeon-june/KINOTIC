@@ -1,21 +1,22 @@
 <template>
   <div class="w-97 mx-auto">
     <div class="flex justify-start items-center my-6">
-      <label for="order" class="px-2 text-center text-lg py-0.5">정렬</label>
-      <select name="order" @change="onChange($event)" v-model="rangetype" aria-label="Default select example" class="form-select appearance-none
+      <!-- <label for="order" class="px-2 text-center text-lg py-0.5">정렬</label> -->
+      <select name="order" @change="onChange($event)" v-model="rangetype"
+        class=" placeholder-gray-600
         block
         w-1/4
-        px-3
-        py-1
+        px-2
+        py-0.5
         text-base
         font-normal
         text-gray-700
-        bg-white bg-clip-padding bg-no-repeat
         border border-solid border-gray-300
         rounded
         transition
         ease-in-out
-        focus:text-gray-700 focus:bg-white focus:border-purple-600 focus:outline-none">
+        focus:text-gray-700 focus:bg-white focus:border-purple-800 focus:outline-none">
+          <option value="" disabled selected hidden>정렬</option>
           <option value="9">가나다순</option>
           <option value="1">개봉예정</option>
           <option value="2">평점내림차순</option>

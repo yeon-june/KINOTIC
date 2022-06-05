@@ -156,7 +156,7 @@ export default {
   width:97%
 }
 .overflow-hidden {
-  height: 0vh;
+  height: 80vh;
   overflow: hidden;
 }
 

@@ -23,7 +23,7 @@
         <label for="2-stars" class="star">&#9733;</label>
         <input type="radio" id="1-star" name="rating" value="1" v-model="content.vote" :disabled="!isLoggedIn"/>
         <label for="1-star" class="star">&#9733;</label>
-      <div class="flex items-end text-box mr-1">
+        <div class="flex items-end text-box mr-1">
           <p class="alice-reg form-text">평점: </p>
         </div>
       </div>
@@ -65,6 +65,7 @@ export default {
       console.log(this.content )
       this.createReview({ moviePk: this.moviePk, content: this.content })
       this.content.content = ''
+      this.content.vote = 0
     }
   },
 }
